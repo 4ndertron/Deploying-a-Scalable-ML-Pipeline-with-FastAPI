@@ -1,16 +1,12 @@
 import json
+import requests as rq
 
-import requests
+base_url = 'http://127.0.0.1:8000/'
+output_template = 'Status Code: %s\nResult: %s'
 
-# TODO: send a GET using the URL http://127.0.0.1:8000
-r = # Your code here
-
-# TODO: print the status code
-# print()
-# TODO: print the welcome message
-# print()
-
-
+# Send a GET using the URL http://127.0.0.1:8000
+r1 = rq.get(base_url)
+print(f'Status Code: {r1.status_code}\nResult{r1.text})')
 
 data = {
     "age": 37,
@@ -29,10 +25,6 @@ data = {
     "native-country": "United-States",
 }
 
-# TODO: send a POST using the data above
-r = # Your code here
-
-# TODO: print the status code
-# print()
-# TODO: print the result
-# print()
+# Send a POST using the data above
+r2 = rq.post(f'{base_url}data', json=data)
+print(f'Status Code: {r2.status_code}\nResult{r2.text})')
