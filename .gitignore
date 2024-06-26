@@ -1,0 +1,11 @@
+# IDE and Python specific ignores
+.idea
+__pycache__
+.ipynb_checkpoints
+
+# Environments
+.venv
+venv
+
+# Secrets
+*.env
