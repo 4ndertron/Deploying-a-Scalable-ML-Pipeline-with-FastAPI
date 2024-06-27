@@ -30,7 +30,7 @@ The data was split to train and test the model at 80% and 20% respectively.
 
 The model reached the following metric performance:
 
-Precision: 0.7462 | Recall: 0.6575 | F1 (fbeta): 0.6990
+Precision: 0.7274 | Recall: 0.6393 | F1: 0.6805
 
 ## Ethical Considerations
 
